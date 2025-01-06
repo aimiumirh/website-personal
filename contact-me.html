@@ -1,0 +1,126 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" color="brown">
+    <meta name="description" content="Personal website of aimiumirh">
+    <title>aimiumirh's Personal Website</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 id="top">Welcome to aimiumirh's Website</h1>
+            <p><a href="index.html">Home</a> | <a href="about-me.html">About Me</a> | <a href="hobby.html">My Hobby</a> | <a href="education.html">Education</a> | <a href="contact-me.html">Contact Me</a></a></p>
+			<style> body { background-image: url('pics/bg2.jpg'); } </style>
+        </div>
+    </header>
+	
+	<!-- Contact Section -->
+	<section id="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>If you'd like to get in touch, please fill out the form below:</p>
+
+        <!-- Contact Form -->
+        <form id="contact-form" action="mailto:aimiumirh@gmail.com" method="POST">
+            <div class="form-group">
+                <label for="name" align="center">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your name">
+            </div>
+
+
+			<div class="form-group">
+			<label for="state" align="center">State</label>
+		<p align="center"><select type="state" id="state" name="state">
+		<option value="Kel">Kelantan</option>
+		<option value="Ked">Kedah</option>
+		<option value="Sel">Selangor</option>
+		<option value="Sab">Sabah</option>
+		<option value="Sar">Sarawak</option>
+		<option value="Pul">Pulau Pinang</option>
+		<option value="Mel">Melaka</option>
+		<option value="N9">Negeri Sembilan</option>
+		<option value="Joh">Johor</option>
+		<option value="Pah">Pahang</option>
+		<option value="Per">Perlis</option>
+		<option value="Ter">Terengganu</option>
+		<option value="Wil">Wilayah Persekutuan</option>
+		</select></p>
+		</div>
+
+            <div class="form-group">
+                <label for="email" align="center">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+
+            <div class="form-group">
+			<label for="message" align="center">Your Message</label>
+                <textarea id="message" name="message" required placeholder="Enter your message"></textarea>
+            </div>
+
+            <button type="submit" class="cta-btn">Send Message</button>
+        </form>
+
+        <!-- Success Message -->
+        <div id="success-message" class="hidden">
+            <p>Thank you for getting in touch! I will respond as soon as possible.</p>
+        </div>
+    </div>
+
+	<br height="50"></br>
+
+	<p align="center">
+	<a href="https://www.instagram.com/aimiumirh/" class="fa fa-instagram"></a> 
+	<a href="https://x.com/aimiumirh" class="fa fa-twitter"></a>
+	<a href="https://www.linkedin.com/in/aimi-zulkaria-2738bb306/" class="fa fa-linkedin"></a>
+	</p>
+	
+	<td align="center"><a href="#top"><img src="pics/arrow.png"></a></td>
+	
+	 </section>
+	<!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 aimiumirh. All Rights Reserved.</p>
+        </div>
+    </footer>
+	
+<style>
+	.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+	.fa:hover {
+    opacity: 0.7;
+}
+	.fa-instagram {
+  background: #125688;
+  color: white;
+}
+	.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+// Get the form and success message elements
+const form = document.getElementById('contact-form');
+const successMessage = document.getElementById('success-message');
+
+// Add event listener for form submission
+form.addEventListener('submit', function(event) {
+    event.preventDefault();  // Prevent actual form submission
+
+    // Show the success message
+	
+</style>
+</body>
+</html>
