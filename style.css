@@ -1,5 +1,4 @@
-
-	<body>
+<body>
 	 {
     margin: 0;
     padding: 0;
@@ -125,7 +124,6 @@ body {
   padding: 0 4px;
 }
 
-/* Create two equal columns that sits next to each other */
 .column {
   -ms-flex: 50%; /* IE 10 */
   flex: 50%;
@@ -137,7 +135,6 @@ body {
   vertical-align: middle;
 }
 
-/* Style the buttons */
 .btn {
   border: none;
   outline: none;
